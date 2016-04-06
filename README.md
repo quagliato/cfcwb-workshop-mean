@@ -19,3 +19,10 @@ Serão duas aplicações simultâneas, ambas servidas pelo Express:
 **OBS**: Não esqueça de configurar a URL de conexão do MongoDB no arquivo 
 *db.js*.
 
+## Apresentação
+
+Esse Workshop foi ministrado no dia 2016-04-06 no HackNight do CodeForCuritiba
+que aconteceu no Centro de Eventos da FIEP em Curitiba, Brasil.
+
+Veja o deck aqui: [http://bit.ly/MEANquagliato](http://bit.ly/MEANquagliato)
+
