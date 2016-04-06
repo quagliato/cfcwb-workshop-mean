@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="cfcwbWorkshopMean">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CfCWB Workshop - MEAN</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="/core.js"></script>
+
+</head>
+<body ng-controller="mainController">
+  <header>
+    <h1>CfCWB Workshop - MEAN</h1>
+    <h2>Comentários</h2>
+  </header>
+  <main>
+    <h3>Criar comentário</h3>
+    <form>
+      <p><label for="yourName">Seu nome</label><br>
+      <input type="text" name="yourName" id="yourName" ng-model="formData.user_name"></p>
+
+      <p><label for="yourComment">Seu comentário</label><br>
+      <textarea name="yourComment" id="yourComment" ng-model="formData.content"></textarea></p>
+
+      <button type="submit" ng-click="createComment()">Add</button>
+    </form>
+    <hr>
+    <h3>Comentários</h3>
+    <ul>
+      <li ng-repeat="commentItem in commentData.comments">
+        <h4>{{ commentItem.user_name }}</h4>
+        <p>{{ commentItem.dt_creation }}</p>
+        <p>{{ commentItem.content }}</p>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
