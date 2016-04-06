@@ -4,8 +4,10 @@ Exemplos para o workshop de MEAN stack no HackNight do CodeForCuritiba.
 
 ## How to
 
-Para testar o exemplo, clone o repositório, entre no diretório e inicie com
+Para testar o exemplo, clone o repositório, entre no diretório e execute esses
+comandos:
 ```
+$ npm install
 $ node server
 ```
 
